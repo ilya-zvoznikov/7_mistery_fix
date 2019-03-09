@@ -22,7 +22,7 @@ if __name__ == '__main__':
                                  'через запятую:\n').split(',')
             a, b, c = [float(number.strip()) for number in numbers_list]
             break
-        except:
+        except ValueError:
             print('Некорректные значения!\n'
                   'Попробуйте еще раз!')
 
